@@ -1,13 +1,15 @@
-# Analog-design-of-LDO-using-CMOS-45nm-Technology
 # 🔋 Analog Design of Low Dropout Regulator (LDO) in 45nm CMOS
+
+---
 
 ## 📌 Project Overview
 
 This project presents the complete analog IC design flow of a PMOS-based Low Dropout Regulator (LDO) implemented in 45nm CMOS technology using Cadence Virtuoso.
 
-The work includes:
-- Schematic design
-- DC & Transient simulation
+The project includes:
+
+- Transistor-level schematic design
+- DC and Transient simulation
 - Layout implementation
 - DRC verification
 - LVS verification
@@ -18,65 +20,137 @@ The work includes:
 
 ## 🎯 Key Specifications
 
-- Technology: 45nm CMOS
-- Output Voltage: 2.45 V
-- Load Current: ~49 µA
-- PSRR: 13.62 dB
-- Architecture: PMOS Pass Transistor
-- Compensation: Internal Miller Compensation
+| Parameter | Value |
+|-----------|--------|
+| Technology | 45nm CMOS |
+| Output Voltage | 2.45 V |
+| Load Current | ~49 µA |
+| PSRR | 13.62 dB |
+| Architecture | PMOS Pass Transistor |
+| Compensation | Internal Miller Compensation |
 
 ---
 
-## 🧠 Architecture
+# 🧠 Architecture
 
-- Reference Voltage Generator
-- Folded Cascode Error Amplifier
-- PMOS Pass Transistor
-- Feedback Divider
-- Internal Compensation Network
+The LDO consists of:
+
+- Reference Voltage Generator  
+- Folded Cascode Error Amplifier  
+- PMOS Pass Transistor  
+- Feedback Divider Network  
+- Internal Compensation Network  
 
 ---
 
 # 📊 Simulation Results
 
-## 1️⃣ Transient Response
+---
 
-- Smooth startup
+## 🔹 Error Amplifier Schematic
+
+<img src="images/Error Amplifier Schematic.jpg" width="750">
+
+---
+
+## 🔹 Complete LDO Schematic
+
+<img src="images/LDO Schematic.jpg" width="750">
+
+---
+
+## 🔹 Transient Response Analysis
+
+<img src="images/Transient Response Analysis.jpg" width="750">
+
+### Observation:
+- Smooth startup behavior
 - No overshoot
-- Stable settling
-- Capacitor-less stability verified
-
-Output settles at ≈ 2.45 V.
-
----
-
-## 2️⃣ DC Sweep Analysis
-
-- Correct dropout behavior
-- Stable regulation after Vin > Vout + Vdrop
-- Smooth transition from dropout to regulation region
+- Output settles near **2.45 V**
+- Stable compensation
+- Minimal ripple in steady-state
 
 ---
 
-## 3️⃣ PSRR Calculation
+## 🔹 DC Sweep Analysis
+
+<img src="images/DC Response.jpg" width="750">
+
+### Observation:
+- Linear rise initially
+- Proper dropout transition
+- Stable regulation once Vin > Vout + Vdrop
+- No discontinuities
+
+---
+
+# 🧱 Physical Layout & Verification
+
+---
+
+## 🔹 LDO Layout Design
+
+<img src="images/LDO Layout Design.jpg" width="750">
+
+---
+
+## 🔹 DRC Check
+
+<img src="images/DRC Check.jpg" width="750">
+
+✔ No Design Rule Violations  
+✔ Layout meets 45nm PDK constraints  
+
+---
+
+## 🔹 LVS Match
+
+<img src="images/LVS Match.jpg" width="750">
+
+✔ Layout matches schematic  
+✔ No shorts or opens  
+
+---
+
+## 🔹 Quantus RC Extraction
+
+<img src="images/Quantus Run.jpg" width="750">
+
+---
+
+## 🔹 RC Extracted Layout
+
+<img src="images/RC Extraction.jpg" width="750">
+
+✔ Parasitic resistances included  
+✔ Parasitic capacitances included  
+✔ Post-layout stability verified  
+
+---
+
+# 📐 Performance Analysis
+
+## PSRR Calculation
 
 PSRR = 20 log (VR_supply / VR_out)
 
-Calculated PSRR = 13.62 dB
+Calculated PSRR:
+
+**13.62 dB**
 
 ---
 
-# 🧱 Physical Verification
+## Power Dissipation
 
-## ✅ DRC
-- Zero violations
+Using:
 
-## ✅ LVS
-- Layout matches schematic
+Pd = Vin × Iin
 
-## ✅ RC Extraction
-- Quantus extraction completed
-- Post-layout simulations stable
+Calculated:
+
+**≈ 0.125 W**
+
+Both analytical and simulation results matched.
 
 ---
 
@@ -94,5 +168,28 @@ Calculated PSRR = 13.62 dB
 
 - SoC Power Management
 - IoT Devices
-- RF Blocks
+- RF Circuits
 - Mixed-Signal ICs
+- Low Power Systems
+
+---
+
+# 🏆 Project Highlights
+
+✔ Complete Custom Analog IC Flow  
+✔ 45nm CMOS Technology Experience  
+✔ DRC Clean  
+✔ LVS Match  
+✔ Post-layout Validation  
+✔ Fabrication-ready Layout  
+
+---
+
+## 👨‍💻 Authors
+
+Abhishek H J  
+Anirudh H S  
+Hemanth Kumar M M  
+
+---
+
