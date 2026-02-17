@@ -49,19 +49,19 @@ The LDO consists of:
 
 ## 🔹 Error Amplifier Schematic
 
-<img src="images/Error Amplifier Schematic.jpg" width="750">
+<img src="Results/Error Amplifier Schematic.jpg" width="750">
 
 ---
 
 ## 🔹 Complete LDO Schematic
 
-<img src="images/LDO Schematic.jpg" width="750">
+<img src="Results/LDO Schematic.jpg" width="750">
 
 ---
 
 ## 🔹 Transient Response Analysis
 
-<img src="images/Transient Response Analysis.jpg" width="750">
+<img src="Results/Transient Response Analysis.jpg" width="750">
 
 ### Observation:
 - Smooth startup behavior
@@ -74,7 +74,7 @@ The LDO consists of:
 
 ## 🔹 DC Sweep Analysis
 
-<img src="images/DC Response.jpg" width="750">
+<img src="Results/DC Response.jpg" width="750">
 
 ### Observation:
 - Linear rise initially
@@ -90,13 +90,13 @@ The LDO consists of:
 
 ## 🔹 LDO Layout Design
 
-<img src="images/LDO Layout Design.jpg" width="750">
+<img src="Results/LDO Layout Design.jpg" width="750">
 
 ---
 
 ## 🔹 DRC Check
 
-<img src="images/DRC Check.jpg" width="750">
+<img src="Results/DRC Check.jpg" width="750">
 
 ✔ No Design Rule Violations  
 ✔ Layout meets 45nm PDK constraints  
@@ -105,7 +105,7 @@ The LDO consists of:
 
 ## 🔹 LVS Match
 
-<img src="images/LVS Match.jpg" width="750">
+<img src="Results/LVS Match.jpg" width="750">
 
 ✔ Layout matches schematic  
 ✔ No shorts or opens  
@@ -114,13 +114,13 @@ The LDO consists of:
 
 ## 🔹 Quantus RC Extraction
 
-<img src="images/Quantus Run.jpg" width="750">
+<img src="Results/Quantus Run.jpg" width="750">
 
 ---
 
 ## 🔹 RC Extracted Layout
 
-<img src="images/RC Extraction.jpg" width="750">
+<img src="Results/RC Extraction.jpg" width="750">
 
 ✔ Parasitic resistances included  
 ✔ Parasitic capacitances included  
